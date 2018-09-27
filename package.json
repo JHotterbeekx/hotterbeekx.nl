@@ -1,0 +1,19 @@
+{
+  "name": "hotterbeekx.nl",
+  "version": "1.0.0",
+  "description": "Code for the website hotterbeekx.nl",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHotterbeekx/hotterbeekx.nl.git"
+  },
+  "author": "John Hotterbeekx <john.online@hotterbeekx.nl> (https://github.com/JHotterbeekx/word-search-solver)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHotterbeekx/hotterbeekx.nl/issues"
+  },
+  "homepage": "https://github.com/JHotterbeekx/hotterbeekx.nl#readme"
+}

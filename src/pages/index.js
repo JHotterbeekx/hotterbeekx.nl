@@ -8,10 +8,13 @@ const IndexPage = (props) => {
     <Layout>
       {postList.edges.map(({ node }, i) => (
         <Link to={node.fields.slug} key={node.fields.slug} className="link" >
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
+          <div className="post-list-item">
+            <div className="post-image" style={{ backgroundImage: `url(${node.frontmatter.image.childImageSharp.resize.src})` }}></div>
+            <div className="post-details">
+              <h2 className="post-title">{node.frontmatter.title}</h2>
+              <div className="post-description">{node.excerpt}</div>
+              <div className="post-meta">{node.frontmatter.date}</div>
+            </div>
           </div>
         </Link>
       ))}
@@ -33,6 +36,13 @@ export const listQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do YYYY")
             title
+            image {
+              childImageSharp {
+                  resize(width: 780, height: 325) {
+                  src
+                  }
+              }
+            }
           }
         }
       }

@@ -1,0 +1,39 @@
+a, a:hover {
+  text-decoration: none;
+}
+
+.post-list-item {
+  width: 780px;
+  margin-bottom: 40px;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: #fff;
+}
+
+.post-list-item .post-image {
+  width: 780px;
+  height: 325px;
+}
+
+.post-list-item .post-meta {
+  font-style: italic;
+  color: #909090;
+  font-size: 13px;
+  text-align: right;
+}
+
+.post-list-item .post-description {
+  color: #868686;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.post-list-item .post-details {
+  padding: 20px;
+}
+
+.post-list-item .post-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}

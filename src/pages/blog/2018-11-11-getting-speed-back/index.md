@@ -1,5 +1,5 @@
 ---
-title: Getting speed back, my Webpack debugging journey
+title: "Getting speed back, my Webpack debugging journey"
 description: 
 date: '2018-11-11'
 image: 'cover.png'

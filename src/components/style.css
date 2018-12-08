@@ -2,6 +2,75 @@ a, a:hover {
   text-decoration: none;
 }
 
+
+.posts {
+  width: 780px;
+  float: left;
+}
+
+.sidebar {
+  float: right;
+  width: 300px;
+}
+
+.clear {
+  clear: both;
+}
+
+.sidebar .item {
+  margin-bottom: 40px;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: #fff;
+}
+
+.sidebar .item img {
+  margin-bottom: 0px;
+  border-bottom: 2px solid #009FDE;
+  border-top: 2px solid #009FDE;
+}
+
+.sidebar .profile-description {
+  text-align: center;
+  color: #868686;
+  font-size: 14px;
+}
+
+.sidebar .profile-social {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid whitesmoke;
+}
+
+.sidebar .profile-social a {
+  padding: 7px;
+  color: #868686;
+  font-size: 20px;
+}
+
+.sidebar .title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.sidebar .profile-image {
+  height: 100px !important;
+  width: 100px !important;
+  border: 2px solid #009FDE;
+  border-radius: 100%;
+  position: relative;
+  object-fit: cover;
+  top: -55px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+
+
 .post-list-item {
   width: 780px;
   margin-bottom: 40px;

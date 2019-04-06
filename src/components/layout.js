@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Sidebar from './sidebar'
 import Header from './header'
 import './layout.css'
 import './style.css'
@@ -40,7 +41,13 @@ const Layout = ({ children }) => (
             
           }}
         >
-          {children}
+          <div className="container">
+            <div className="content">
+              {children}
+            </div>
+            <Sidebar />
+            <div class="clear"></div>
+          </div>
         </div>
       </div>
     )}

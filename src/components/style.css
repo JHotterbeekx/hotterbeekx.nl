@@ -2,8 +2,7 @@ a, a:hover {
   text-decoration: none;
 }
 
-
-.posts {
+.content {
   width: 780px;
   float: left;
 }
@@ -114,7 +113,7 @@ a, a:hover {
 
 .post-full .post-content {
   padding: 30px 50px 50px 50px;
-  width: 900px;
+  width: 100%;
 }
 
 .post-full .post-title {
@@ -131,7 +130,7 @@ a, a:hover {
     position: relative;
     display: block;
     margin: auto;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .post-full .post-body h2 {

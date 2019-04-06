@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'John Hotterbeekx - Full stack made practical',
+    title: 'Hotterbeekx.nl',
+    subTitle: 'Full stack made practical',
     siteUrl: 'http://www.hotterbeekx.nl'
   },
   plugins: [

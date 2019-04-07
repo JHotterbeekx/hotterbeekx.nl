@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Logo from '../images/logo.png';
 
 const Header = ({ siteTitle, subTitle }) => (
   <div
@@ -29,6 +30,7 @@ const Header = ({ siteTitle, subTitle }) => (
             verticalAlign: 'middle'
           }}
         >
+          <img src={Logo} alt="logo" style={{ width: '30px', float: 'left', marginRight: '5px' }} />
           <span style={{ fontSize: '1.8em' }}>{siteTitle}</span>
           <span style={{ fontSize: '0.8em', paddingLeft: '10px' }}>{subTitle}</span>
         </Link>

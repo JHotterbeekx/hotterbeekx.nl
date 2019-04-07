@@ -2,13 +2,11 @@
 title: "Getting speed back, my Webpack debugging journey"
 description: 
 date: '2018-11-11'
-image: 'cover.png'
+image: 'img/cover.png'
 ---
-
-
 I want to take you on a journey, through a land of slowness. Where everything lost its motivation to go fast, where hope seems lost. I want to take you through debugging the speed issues we were having with Webpack. Usually I'll try and write articles about processes, giving people advice and tips and get them to think about certain subject. For this article I'm trying a different direction, my goal is to share the process I went through while working on this problem, describing my thought process, but without any judgement. Just what I did, and why. Hoping to inspire and remove the illusion that experienced developers know everything. I'd love to hear your thoughts about the format.
 
-![Debugging](https://thepracticaldev.s3.amazonaws.com/i/hk4knli19og1vk6ijrsh.png)
+![Debugging](img/01.debug.png)
 
 ## Background
 I've been working with React for around two years now. While our project uses a lot of libraries the one I'll be looking into today is Webpack. Webpack is a package we use to bundle our project, it takes all the javascript and typescript code we've written, transpiles, minimizes, and optimizes it into a file that browsers can use, while also processing stuff like CSS, HTML, images and other files we are using. For more information you can find a lot of information on [their website](https://webpack.js.org/).
@@ -18,7 +16,7 @@ Webpack is a widely used package, very widely, as in 4+ million downloads per we
 ## The problem
 When we finish a user story we first deploy our solution to our test environment, so our automated test suite can do it's magic. We had a story where we happened to find some issues while testing on this environment, resulting in having to do this process several times. But I started to notice that I took pretty long, longer than usual. When looking on Team City to confirm this feeling, I noticed our 'Run unit test & build' took up to 15 minutes, while this usually is around 7 / 8 max. When diving into the logs I found that our build step took between 8 and 10 minutes, at some moments even going up to 12. Our solution is not that big, it should not take this long. Even better, it didn't use to take that long. Something took its mojo!
 
-![Waiting for build](https://thepracticaldev.s3.amazonaws.com/i/wxmfdpwf4k4pnuuxxb3s.png)
+![Waiting for build](img/02.compiling.png)
 
 ## Where to start?
 My first instinct was to check the history on team city. It saves the information of the last couple of builds, so if the problem was introduced in one of the last few stories, I should be able to see a big increase in time here. But all of them were slow, so this wasn't caused recently. 
@@ -36,7 +34,7 @@ The first suggestion that took my attention was a [plugin](https://www.npmjs.com
 ## I'm not alone
 When running webpack with the progress flag I got real-time information about what it was doing and instantly noticed I stayed at "92% Chunk asset optimization" for almost 90% of the build time. This has to be the problem! So I opened up Google again and searched for "webpack 92% chunk asset optimization". There were a lot of people having the same issue, finally!
 
-![Not alone](https://thepracticaldev.s3.amazonaws.com/i/2xtpkdx7ausk8ag1tsqv.jpg)
+![Not alone](img/03.not.alone.jpg)
 
 ## Trial and error
 I found massive discussions on github projects about this issue, some spanning more then a year and some with the last message in the last few days. So this issue has been in there for a long time, and it may be still not solved. But there were a lot of suggestions in the replies, people saying "This fixes it for me", and a lot of different things fixed the same issue for different people. My next instinct was to use trial and error by just trying out the solutions posted there, starting of with the most mentioned solutions. The most mentioned solutions were disabling source maps and disabling compression (and some other options) in UglifyJS. So I went back to basics with build mode, disabling source maps and installed a separate version of UglifyJS so I could disable the compression. My next build, was 80 seconds!
@@ -47,7 +45,7 @@ This build time got me fired up, it was fixable! But in the ideal world I wanted
 ## Transpiling
 We recently added typescript to our solution, which was working fine. But the suggestions were to add some parts to the typescript config, so I did just that. Build again, and now...different errors. Hmm, so it impacted something, let's check the new errors out. They were syntax errors again, but it looked like something messed up the type script translation to javascript. Now the pieces were falling into place. We are already using babel to transpile our javascript, can't we just let babel do the typescript as well? I quickly Googled how to do this, set the typescript configuration to just sent out the latest syntax version and updated the webpack config to send the typescript code to babel. Excitedly running the build command again, and...it....worked! I now had a build time of around 120 seconds, with source maps.
 
-![Fast again](https://thepracticaldev.s3.amazonaws.com/i/pt2yuh4corj4j9yrh13i.jpg)
+![Fast again](img/04.fast.jpg)
 
 ## Tweaking and confirming
 I was very close now, it worked. My next step was figuring out what was causing the slowness. Since the thing I read most was the compression flag on UglifyJS, I started by turning that off. The build time instantly jumped back to 8 minutes. Okay, so this causes the slowness, but why wasn't it an issue before? I think it just slowly got slower while the project grew, adding typescript as well eventually impacted it even more and slowly it reached this point. If it wasn't for having to deploy the same story multiple times to our test environment we probably wouldn't even have noticed this issue until it was even worse.

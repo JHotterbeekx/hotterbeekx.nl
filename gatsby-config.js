@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Hotterbeekx.nl',
-    subTitle: 'Full stack made practical',
+    subTitle: 'Writings about software development',
     siteUrl: 'http://www.hotterbeekx.nl'
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-remark`,
@@ -34,9 +34,16 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-prismjs`,
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 778,
+            },
+          },
         ]
       }
-    }
+    },
   ],
 }

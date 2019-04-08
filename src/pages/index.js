@@ -9,7 +9,7 @@ const IndexPage = (props) => {
       {postList.edges.map(({ node }, i) => (
         <Link to={node.fields.slug} key={node.fields.slug} className="link" >
           <div className="post-list-item">
-            <div className="post-image" style={{ backgroundImage: `url(${node.frontmatter.image.childImageSharp.resize.src})` }}></div>
+            <img className="post-image" src={node.frontmatter.image.childImageSharp.resize.src} />
             <div className="post-details">
               <h2 className="post-title">{node.frontmatter.title}</h2>
               <div className="post-description">{node.excerpt}</div>

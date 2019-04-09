@@ -94,6 +94,7 @@ a, a:hover {
   padding: 10px;
   text-align: center;
   margin-bottom: 0px;
+  display: block;
 }
 
 .sidebar .profile-image {

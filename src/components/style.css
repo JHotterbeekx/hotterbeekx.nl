@@ -20,6 +20,14 @@ a, a:hover {
   font-size: 0.8em;
 }
 
+.sidebar {
+  float: right;
+  width: 300px;
+}
+
+.gatsby-highlight {
+  display: grid;
+}
 
 @media only screen and (max-width: 560px) {
   .logo {
@@ -27,16 +35,23 @@ a, a:hover {
   }
 }
 
+@media only screen and (max-width: 1136px) {
+  .sidebar {
+    float: none;
+    max-width: 780px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+
 
 .content {
   max-width: 780px;
   float: left;
 }
 
-.sidebar {
-  float: right;
-  width: 300px;
-}
+
 
 .clear {
   clear: both;
@@ -134,10 +149,12 @@ a, a:hover {
 .post-full {
   background: #FFF;
   border: 1px solid rgb(212, 212, 212);
+  padding: 5%;
+  margin-bottom: 20px;
 }
 
 .post-full .post-content {
-  padding: 30px 50px 50px 50px;
+
   width: 100%;
 }
 

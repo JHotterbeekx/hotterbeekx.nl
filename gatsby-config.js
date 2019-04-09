@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Hotterbeekx.nl',
     subTitle: 'Writings about software development',
-    siteUrl: 'http://www.hotterbeekx.nl'
+    siteUrl: 'https://www.hotterbeekx.nl'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,7 +18,8 @@ module.exports = {
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-remark',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

@@ -1,3 +1,7 @@
+div#___gatsby {
+  min-width: 300px;
+}
+
 a, a:hover {
   text-decoration: none;
 }
@@ -150,13 +154,14 @@ a, a:hover {
 .post-full {
   background: #FFF;
   border: 1px solid rgb(212, 212, 212);
-  padding: 5%;
   margin-bottom: 20px;
 }
 
 .post-full .post-content {
-
-  width: 100%;
+  margin: 20px 0px;
+  width: 90%;
+  left: 5%;
+  position: relative;
 }
 
 .post-full .post-title {

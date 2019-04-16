@@ -126,7 +126,7 @@ It works!
 There is only one thing left to do, and that is publishing your amazing `Make it rain(bow)` extension. Let's walk through the steps.
 
 - Create a zip file that contains all the files you've made. So the `manifest.json`, the `background.js` and all the icons should be in there.
-- Go to https://chrome.google.com/webstore/devconsole/ and sign in with your google account. 
+- Go to [Google dev console](https://chrome.google.com/webstore/devconsole/) and sign in with your google account. 
 
 ![Signup](img/05.signup.png)
 
@@ -153,9 +153,4 @@ So let's fill these out.
 Thank you for joining me on this adventure, I hope you learned something from it. As you can see, creating a Chrome extension isn't that hard. Coming up with a good idea for an extension that isn't available yet, that's a whole different story. I can only wish you good luck and hope to see one of your extensions very soon!
 
 ## Resources 
-While there is a lot to find on the internet about extensions, I mainly used the google documentation as it is very clear and complete. There are also a lot of working examples in there:
-
-https://developer.chrome.com/extensions
-
-And you can find the example code used here:
-https://github.com/JHotterbeekx/make-it-rainbow-chrome-extension
+While there is a lot to find on the internet about extensions, I mainly used the [google documentation](https://developer.chrome.com/extensions) as it is very clear and complete. There are also a lot of working examples in there. And you can find the example code on [Github](https://github.com/JHotterbeekx/make-it-rainbow-chrome-extension)

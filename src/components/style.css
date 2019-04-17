@@ -15,6 +15,7 @@ a, a:hover {
   float: left;
   margin-right: 5px;
   margin-left: 5px;
+  margin-bottom: 0px;
 }
 
 .title {
@@ -50,17 +51,6 @@ a, a:hover {
     width: 50px;
   }
 }
-
-@media only screen and (max-width: 1136px) {
-  .sidebar {
-    float: none;
-    max-width: 780px;
-    width: 100%;
-    display: inline-block;
-  }
-}
-
-
 
 .content {
   max-width: 780px;
@@ -217,4 +207,72 @@ a, a:hover {
   margin: 1.6em 1vw;
   font-size: 0.92em;
   line-height: 1.4em;
+}
+
+.header-menu {
+  padding-left: 5px;
+}
+
+.header-menu, .header-menu * {
+  margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #868686;
+}
+
+.header-menu-link {
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+}
+
+.card {
+  float: left;
+  width: 248px;
+  height: 200px;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: #fff;
+  margin: 0px 2px 4px 2px;
+  padding: 2px;
+  position: relative;
+}
+
+.card-title {
+  width: 100%;
+  font-size: 1.0em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-description {
+  font-style: italic;
+  color: #868686;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+
+.card-links {
+  position: absolute; 
+  bottom: 0; 
+  width: 100%; 
+  padding: 0px 10px;
+  padding-right: 10px;
+  left: -1px;
+}
+
+.card-links a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-link-demo {
+  float: left;
+}
+
+.card-link-source {
+  float: right;
 }

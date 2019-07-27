@@ -8,7 +8,7 @@ Every sprint our team dedicates some time to learning together, today we watched
 
 ![](img/01.uncle.bob.v2.jpg)
 
-**Uncle Bob's Learning Vision**
+## Uncle Bob's Learning Vision
 It's been a while since I've read 'The Clean Coder', to which this video series belongs. A series dedicated to being a professional software engineer. While being fairly short, his stances on learning are pretty clear:
  - Spend 15-20 hours a week on your career
  - Learn at least one new language per year
@@ -25,7 +25,7 @@ And his opinion on being professional is also pretty clear.
 
 > Perhaps you don’t want to make that kind of commitment. That’s fine, but you should not then think of yourself as a professional. Professionals spend time caring for their profession.
 
-**His comparison to lawyers and doctors**
+## His comparison to lawyers and doctors
 For a while I've been saying, our industry is not like others, it's insane to think other jobs require this much learning. Then I saw his example, the doctor. Hmm, I indeed expect my doctor to keep up with trends. It would be nice for him to be able to diagnose me using new techniques researched in the last few years. But in my mind I kept doubting about the amount of time they would need to invest in this learning. So I decided to ask doctor Google. While not being as entertaining as doctor House, it still got me some good answers. Some quick research told me that depending on which state you live in you need to earn [between 20-60 CME credits per year](https://www.boardvitals.com/blog/cme-requirements-by-state/) to keep your license, thus staying a professional. There are various items that give you these credits, attending conferences, certain meetings, reading journals, etc. And [one credit takes one hour of time](https://www.cdc.gov/cecredit/calculating-ce.html). That means an average doctor needs to spend the same amount of time on learning per year, as what Bob expect a professional developer to spend in 1-3 weeks. Now the comparison starts to fade for me. Some doctors may be really dedicated, but even increasing this 10 times, just matches half the time of a professional software engineer at best. 
 
 What about his tax lawyer then? The same story as doctors, there is a required number of credits per state, which is somewhere [between 20-40 credits per year](https://www.westerncpe.com/resources/cpe-requirements/). And the same as with doctors, [one credit takes one hour of work](https://www.cdc.gov/cecredit/calculating-ce.html). Some a professional tax lawyer, or accountant, needs to spend the same amount of learning per year, as what Bob expects a professional developer to spend in 1-2 weeks. 
@@ -34,10 +34,10 @@ These are two jobs, which are known to be high maintenance, high responsibility,
 
 ![](img/02.learning.jpg)
 
-**Being influenced**
+## Being influenced
 While I'm sure Uncle Bob's vision was not meant to be as black and white as I'm using it in this article, there are some dangers to such statements. His work is very well known in the industry, a lot of us will consider him a guru of some form. Thus when he says stuff like that, a lot of people will believe him. It doesn't matter if you are an experience developer, or somebody that is still learning to code. A lot of us have some form of insecurity which is completely natural for a human and widely talked about in the many, many, you would almost say too many, articles about '[Imposter Syndrome](https://dev.to/search?q=Imposter%20Syndrome)'. And those of us that already are somewhat insecure could easily read something like this and start thinking that this is just something every software engineer should do. 
 
-**Be aware**
+## Be aware
 Why is it so dangerous then? We'll exactly like it states in his book that it isn't. I know, confusing right? In his book he states:
 
 > Perhaps you think this is a recipe for burnout. On the contrary, it is a recipe to avoid burnout. Presumably you became a software developer because you are passionate about software and your desire to be a professional is motivated by that passion. During that 20 hours you should be doing those things that reinforce that passion. Those 20 hours should be fun!
@@ -46,10 +46,10 @@ So what, you are saying that this is a recipe for burn out? Yes it is! But it is
 
 ![](img/03.burnout.png)
 
-**What do actual developers think?**
+## What do actual developers think?
 Some highly regarded people advice you to spend a lot of time learning. Besides Uncle Bob I was only able to find the same opinion by [John Sonmez](https://simpleprogrammer.com/developer-skills-updated/), who are both well known for investing time in their career. While others like Andrew Hunt and David Thomas do describe what to do, but not how much time to invest. The thing that I noticed the most is that these people fortunately seem to be the exception, most writers seem to steer clear of advising concrete hours to put in. When you start searching for the opinion of other software engineers, that's exactly what you will find. Opinions, and a lot of them, and a lot of them are different. Although most of them aren't as extreme as the ones above. A lot of people think you do not need to do any coding outside of your job, [this thread](https://softwareengineering.stackexchange.com/questions/114819/are-9-to-5-programmers-looked-down-upon) gives a great vision on this opinion. While others think you do need to spend some time on this outside your job, as discussed in [this thread](https://softwareengineering.stackexchange.com/questions/177651/how-do-developers-find-the-time-to-stay-on-top-of-latest-technologies). There are a lot of threads on this subject, showing the insecurity we have about this subject, but I was unable to find people who had agreed on the 15-20 hours a week. Most opinions are somewhere between just coding at work, learning should happen at the job, to a few hours a week at home are necessary.
 
-**What should I do?**
+## What should I do?
 Great question, I'm glad you asked it! To put it short; Whatever you want! You should try and figure out what you find important in your life, what you want to reach in life and divide you personal time to do those things and reach those goals. For a lot of us, most of us, being a lot of other things will be more important than coding. Think of being a partner, a parent, a friend, having fun, traveling, volunteering, or any other thing you may find important. You probably don't want the last vision you're having on your death bed being that of a factory pattern being injected in your decoupled class, right? Coding, or having a great career may be on the list somewhere, it may not be. Do you want to do everything you can to have the best career as a software engineer, and having that be the most important thing to you, than invest that time! As long as your spare time matches your goals in life, there is no going wrong!
 
 ![](img/04.balance.v2.jpg)

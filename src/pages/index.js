@@ -9,7 +9,7 @@ const IndexPage = (props) => {
       {postList.edges.map(({ node }, i) => (
         <Link to={node.fields.slug} key={node.fields.slug} className="link" >
           <div className="post-list-item">
-            <img className="post-image" src={node.frontmatter.image.childImageSharp.resize.src} />
+            <img className="post-image" alt="cover" src={node.frontmatter.image.childImageSharp.resize.src} />
             <div className="post-details">
               <h2 className="post-title">{node.frontmatter.title}</h2>
               <div className="post-description">{node.excerpt}</div>
@@ -28,7 +28,10 @@ export default IndexPage;
 
 export const listQuery = graphql`
   query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: { fields: { draft: { eq: false } } },
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           fields{

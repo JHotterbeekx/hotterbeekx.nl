@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const projects = [
@@ -49,8 +48,8 @@ const projects = [
 
 function GetLinks(project) {
   const result = [];
-  if (project.demo) result.push(<a className="card-link-demo" target="_blank" href={project.demo}>Demo</a>);
-  if (project.source) result.push(<a className="card-link-source" target="_blank" href={project.source}>Source</a>);
+  if (project.demo) result.push(<a className="card-link-demo" target="_blank" rel="noopener noreferrer" href={project.demo}>Demo</a>);
+  if (project.source) result.push(<a className="card-link-source" target="_blank" rel="noopener noreferrer" href={project.source}>Source</a>);
   return result;
 }
 

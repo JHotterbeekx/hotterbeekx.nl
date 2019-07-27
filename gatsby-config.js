@@ -18,6 +18,8 @@ module.exports = {
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
+    
+    'gatsby-plugin-draft',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-remark',
     'gatsby-plugin-offline',
@@ -42,6 +44,12 @@ module.exports = {
             options: {
               maxWidth: 778,
             },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+            }
           },
         ]
       }

@@ -44,7 +44,7 @@ const Layout = ({ children }) => (
               {children}
             </div>
             <Sidebar />
-            <div class="clear"></div>
+            <div className="clear"></div>
           </div>
         </div>
       </div>

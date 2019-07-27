@@ -1,5 +1,5 @@
 ---
-title: "Meet team Heisenberg"
+title: "Meet team Heisenberg, an inside look in a great team"
 description: 
 date: '2019-07-27'
 image: 'img/cover.png'

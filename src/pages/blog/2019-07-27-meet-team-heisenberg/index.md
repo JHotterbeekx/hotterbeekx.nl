@@ -61,6 +61,12 @@ This one might sound simple and unnecessary to mention, but it isn't. I can't ex
 
 Next to this there is always a lot of talking going on in our office. Not everything is work related, but it keeps the lines open which is very important. Because now when somebody is stuck, has some doubts or anything else that could use some help it's relatively easy to just ask it out loudly in our room. I can not express enough how important it is to work on creating this atmosphere in your team. When you enter the room you should feel as a team, not an individual working in a team. When something breaks you should feel responsible, as a team. When you complete your sprint you should celebrate, as a team. Take lunches together, do fun stuff together, create a place where people aren't afraid to talk about stuff they're struggling with, be it work or personal related. That's when you know you've built a good team. That's what we've built in team Heisenberg.
 
+### Team learning events
+Not only do we work together, but we also learn together as well. Every two weeks we have an hour and a half scheduled where we book a meeting room and watch a video on a topic that interests us. After watching the video we'll discuss it and see if there any new steps that we want to take in the way we work. This way you keep learning new stuff, keep challenging yourself and keep discovering new and interesting concepts. We started off watching videos from Uncle Bob, but nowadays we write down any interesting video we come across and pick one.
+
+### Mobbing kick-offs
+Most development teams pair every now and then, as do we. But we also use a concept that I like to call a mob kick-off. When we start something new, usually a big new concept where we are not sure how to implement it yet. We'll book a meeting room for a day or two and start mobbing. Mobbing is basically the same as pairing, only with more people. We have one keyboard and mouse, which we pass on to the next person after 10 minutes. All of this while working on a machine that is connected to a TV, so everybody is involved. Since this involves all the developers in the team, you share knowledge instantly, everybody has to understand what is going on and you'll get a solution that fits the team. It really is a gre
+
 ![Working together](img/05.work.together.jpg)
 
 ### You are not your product

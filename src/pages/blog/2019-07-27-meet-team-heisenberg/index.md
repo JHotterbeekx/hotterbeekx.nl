@@ -3,7 +3,6 @@ title: "Meet team Heisenberg, an inside look in a great team"
 description: 
 date: '2019-07-27'
 image: 'img/cover.png'
-draft: true
 ---
 I'd love to introduce you to the team I've proudly been a part of for the last three years. We've had our shares of ups and downs working together. Streamlining our processes to increase not only the amount of work we get done, but also the quality of the it. Learning what to do, and of course what not to do. If you are interested, sit down, strap yourself to your seat and join me while I take you through the journey of team Heisenberg.
 
@@ -33,7 +32,7 @@ This takes us to the tasks which are always handled twice. One person picks it u
 ### Architecture review
 Once all tasks are done, including all tests, we have one task left. We call it the 'Architecture review'. We sit together with all developers from the team and go through everything we touched in the code. Now we pay extra attention to the way we named entities, the place we put them, dependencies between them. We discuss direction where we want to go with the code and structure. Usually this means we will change some things to make steps in the way we want to go. This keeps the architecture of our code in good health and gives us a point to regularly think about it.
 
-Now we push our code to our test environment, let the automated tests run and pick up our test plan. At this point two different people use the test plan and manually perform and validate all the steps from our test plan on the test environment. Trying their best to find at least one issue, because a wise man once told us if you test good enough you should always be able to find at least one thing wrong. Once we developers agree the story is complete, we demo it to our product owner and if he signs off we push everything to production and drop our feature branches.
+Now we push our code to our test environment, let the automated tests run and pick up our test plan. At this point two different people use the test plan and manually perform and validate all the steps from our test plan on the test environment. Trying our best to find at least one issue, because a wise man once told us if you test good enough you should always be able to find at least one thing wrong. And you will find one, we tend to find quite some issues we would have otherwise overlooked using this method. Once we developers agree the story is complete, we demo it to our product owner and if he signs off we push everything to production and drop our feature branches.
 
 ![Architecture review](img/03.architecture.review.png)
 

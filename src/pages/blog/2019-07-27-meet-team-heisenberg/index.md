@@ -80,3 +80,5 @@ I'd love to say that we've found the perfect solution for this, but I don't thin
 
 ## Thank you
 I'd like to end this article with a thank you towards the team. Thank you for letting me be part of the team, thank you for helping me grow, thank you for this amazing journey.
+
+This article has also been posted on [dev.to](https://dev.to/jhotterbeekx/meet-team-heisenberg-an-inside-look-in-a-great-team-2pfj).
